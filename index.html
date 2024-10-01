@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Filmes Populares do IMDb</h1>
+    <div class="container">
+        <h1>Encontre seus filmes aqui!</h1>
+        
+        <form class="form" id="formFilme">
+            <input type="text" class="search" id="filtro" placeholder="Pesquise aqui...">
+            <select id="genero" class="search">
+                <option value="">Selecione um gênero</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     
-    <!-- Campo de filtro -->
-    <input type="text" id="filtro" placeholder="Filtrar filmes...">
-
-    <!-- Lista para exibir os filmes -->
     <ul id="listaFilmes"></ul>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalAno"></p>
+            <p id="modalResumo"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
